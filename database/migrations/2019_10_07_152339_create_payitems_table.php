@@ -18,6 +18,7 @@ class CreatePayitemsTable extends Migration
             $table->bigInteger('user_id')->unsigned();
             $table->enum('type', ['inbound', 'outbound']);
             $table->float('amount', 8, 2);
+            $table->date('payment_date');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });

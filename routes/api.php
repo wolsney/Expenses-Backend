@@ -35,4 +35,6 @@ Route::group([
 
 	Route::post('payitem', 'PayitemController@create');
 
+	Route::get('payitems', 'PayitemController@getItems');
+
 });
