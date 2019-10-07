@@ -33,5 +33,6 @@ Route::group([
 ], function($routes){
 	Route::get('me', 'AuthController@me');
 
+	Route::post('payitem', 'PayitemController@create');
 
 });
